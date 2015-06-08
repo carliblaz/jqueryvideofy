@@ -1,4 +1,4 @@
-# jqueryvideofy
+# jquery.videofy
 Change links to .mp4, .webm, .ogg into embed html video
 
 jQuery plugin that check object for links that links to video files (.mp4, .webm, .ogg), 
