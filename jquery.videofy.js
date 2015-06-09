@@ -23,13 +23,13 @@
         }, options );
         $('a').each(function(){
             var videolink = $(this).attr('href');
-            if(videolink.search('mp4') != -1){
+            if(videolink.search('.mp4') != -1){
                 $(this).replaceWith('<video poster="'+settings.poster+'"  controls="'+settings.controls+'" style="width:'+settings.width+'; height:'+settings.height+';" mute="'+settings.mute+'" preload="'+settings.preload+'"><source src="'+videolink+'" type="'+settings.mp4+'"></video>');
             }
-            if(videolink.search('webm') != -1){
+            if(videolink.search('.webm') != -1){
                 $(this).replaceWith('<video poster="'+settings.poster+'" controls="'+settings.controls+'" style="width:'+settings.width+'; height:'+settings.height+';" mute="'+settings.mute+'" preload="'+settings.preload+'"><source src="'+videolink+'" type="'+settings.webm+'"></video>');
             }
-            if(videolink.search('ogg') != -1){
+            if(videolink.search('.ogg') != -1){
                 $(this).replaceWith('<video poster="'+settings.poster+'" controls="'+settings.controls+'" style="width:'+settings.width+'; height:'+settings.height+';" mute="'+settings.mute+'" preload="'+settings.preload+'"><source src="'+videolink+'" type="'+settings.ogg+'"></video>');
             }
         });
